@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Flexbox Layout Creation</title>
+  <style>
+    .holder {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* space between items */
+    }
 
+    .item {
+      flex: 0 0 auto; /* prevent shrinking and set width to auto */
+      background-color: lightcoral;
+      padding: 20px;
+      margin: 10px 0; /* vertical spacing only */
+      font-family: sans-serif;
+      font-size: 18px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="holder">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <!-- Add more items to test wrapping -->
+  </div>
 
 </body>
-
 </html>
